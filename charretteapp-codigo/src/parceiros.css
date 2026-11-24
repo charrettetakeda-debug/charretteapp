@@ -1,0 +1,96 @@
+.parceiros{grid-template-columns:1fr}
+.parceiro-acoes{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end;margin-left:auto}
+.parceiro .pessoa-tx b .selo{margin-left:6px;vertical-align:middle}
+.avatar.grande{width:52px;height:52px;font-size:17px;cursor:default}
+/* área do parceiro */
+.parc-shell{min-height:100vh;min-height:100dvh;background:var(--paper)}
+.parc-topo{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px clamp(14px,4vw,40px);background:var(--ink);color:#fff;flex-wrap:wrap}
+.parc-marca{display:flex;align-items:center;gap:10px}
+.parc-marca b{font-family:'Fraunces',serif;font-size:20px}
+.parc-marca span{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#E0727C;border-left:1px solid #555;padding-left:10px}
+.parc-topo nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.parc-topo nav a,.parc-topo nav button{color:#CFCFCF;font-size:14px;font-weight:600;padding:7px 11px;border-radius:9px;display:inline-flex;align-items:center;gap:6px}
+.parc-topo nav a:hover,.parc-topo nav button:hover,.parc-topo nav a.active{color:#fff;background:rgba(255,255,255,.08)}
+.parc-corpo{max-width:1120px;margin:0 auto;padding:22px clamp(14px,4vw,40px) 60px}
+.parc-hero h1{font-size:clamp(28px,4vw,38px);margin:6px 0}
+.parc-hero p{color:var(--ink-2)}
+.aviso-ficha{display:flex;align-items:center;gap:14px;border-color:var(--terra-soft);background:#FFFCFC}
+.aviso-ficha div{flex:1;display:flex;flex-direction:column;gap:2px}
+.parc-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.parc-cartao{display:flex;flex-direction:column;gap:8px}
+.parc-cartao.st-convidado{border-left:4px solid var(--gold)}
+.parc-cartao.st-confirmado{border-left:4px solid var(--green)}
+.parc-cartao h3{font-family:'Fraunces',serif;font-size:21px;margin:2px 0 0}
+.parc-cartao-topo{display:flex;justify-content:space-between;align-items:center}
+.parc-data{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.parc-resumo{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:6px 0;font-size:14px}
+.parc-resumo dt{color:var(--ink-3);font-weight:600}
+.parc-resumo dd{margin:0;color:var(--ink)}
+.parc-desafio{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;line-height:1.5}
+.parc-acoes{display:flex;gap:8px;margin-top:auto;padding-top:6px}
+.parc-acoes .btn{flex:1;justify-content:center}
+.parc-cartao>.btn{align-self:flex-start;margin-top:auto}
+.parc-recusadas summary{cursor:pointer;font-weight:600}
+.parc-recusada{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.parc-abas{margin:4px 0 16px}
+.prog-leitura{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.prog-leitura .hora{width:56px;flex:none;font-weight:700;color:var(--terra)}
+.prog-leitura p{margin-top:2px}
+.convite-dados{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--ink-2);font-weight:600;font-size:14px;margin-top:4px}
+.convite-msg{background:var(--sand);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.5;white-space:pre-line;margin-top:10px}
+.ficha-topo{display:flex;gap:16px;align-items:flex-end;margin-bottom:6px}
+.ficha-foto{width:76px;height:76px;border-radius:50%;background:var(--gold-soft) center/cover no-repeat;color:#8a6418;font-weight:700;font-size:22px;display:grid;place-items:center;flex:none;margin-bottom:14px;border:2px dashed transparent}
+.ficha-foto:hover{border-color:var(--gold)}
+/* catálogo */
+.catalogo-lista{display:flex;flex-direction:column;gap:6px;max-height:60vh;overflow-y:auto}
+.catalogo-item{display:flex;align-items:center;gap:12px;text-align:left;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.catalogo-item:hover:not(:disabled){border-color:var(--terra)}
+.catalogo-item:disabled{opacity:.55;cursor:default}
+.catalogo-item .pessoa-tx{flex:1;min-width:0;display:flex;flex-direction:column}
+.catalogo-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.catalogo-cartao{display:flex;flex-direction:column;gap:10px}
+.catalogo-cab{display:flex;gap:12px;align-items:center}
+.catalogo-cab .pessoa-tx{display:flex;flex-direction:column;gap:1px;min-width:0}
+.catalogo-bio{font-size:13.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+.catalogo-bio.aberta{-webkit-line-clamp:unset;display:block}
+.catalogo-contatos{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:13px;color:var(--ink-2)}
+.catalogo-contatos a{color:var(--terra)}
+.catalogo-vinculos{display:flex;flex-wrap:wrap;gap:6px}
+.catalogo-cartao select{margin-top:auto}
+/* quadros incorporados */
+.quadro-form{display:grid;grid-template-columns:1fr 1.6fr auto;gap:8px;margin-bottom:12px}
+.quadro-form .ajuda{grid-column:1/-1;font-size:12.5px;line-height:1.5}
+.quadros-abas{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.quadros-abas>button:not(.icon-btn){padding:7px 12px;border-radius:999px;border:1px solid var(--line);font-size:13.5px;font-weight:600;background:#fff}
+.quadros-abas>button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.quadros-abas .icon-btn{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.quadro-frame{position:relative;height:min(72vh,720px);border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--sand)}
+.quadro-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.quadro-frame:fullscreen{height:100vh;border-radius:0}
+@media (max-width:760px){
+  .quadro-form{grid-template-columns:1fr}
+  .parc-grade,.catalogo-grade{grid-template-columns:1fr}
+  .parceiro{flex-wrap:wrap}
+  .parceiro-acoes{width:100%;justify-content:flex-start}
+  .quadro-frame{height:65vh}
+}
+.quadros-grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.quadro-tile{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;min-height:300px}
+.quadro-tile-topo{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.quadro-tile-topo b{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14.5px}
+.quadro-servico{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-3)}
+.quadro-tile-frame{position:relative;flex:1;min-height:260px;background:var(--sand);overflow:hidden}
+.quadro-tile-frame iframe{position:absolute;top:0;left:0;width:200%;height:200%;border:0;transform:scale(.5);transform-origin:0 0;pointer-events:none}
+.quadro-tile-capa{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;padding:10px;background:linear-gradient(transparent 60%,rgba(31,32,33,.35));opacity:.85;transition:.15s;cursor:zoom-in}
+.quadro-tile-capa span{display:inline-flex;align-items:center;gap:6px;background:rgba(31,32,33,.85);color:#fff;font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px}
+.quadro-tile:hover .quadro-tile-capa{opacity:1}
+.quadro-tile:hover{border-color:var(--terra-soft);box-shadow:var(--shadow)}
+.quadro-novo{align-items:center;justify-content:center;gap:8px;border:2px dashed #CFC9C1;background:transparent;color:var(--ink-2);font-weight:600}
+.quadro-novo:hover{border-color:var(--terra);color:var(--terra)}
+.quadro-novo-form{padding:14px;gap:10px;justify-content:flex-start;border-style:dashed}
+.quadro-novo-form .ajuda{font-size:12px;line-height:1.5}
+.quadro-modal-fundo{padding:12px}
+.quadro-modal{background:#fff;border-radius:16px;width:min(1400px,100%);height:calc(100dvh - 24px);display:flex;flex-direction:column;overflow:hidden}
+.quadro-modal-topo{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.quadro-modal .quadro-frame{flex:1;height:auto;border:0;border-radius:0}
+@media (max-width:760px){.quadros-grade{grid-template-columns:1fr}}

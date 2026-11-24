@@ -1,0 +1,26 @@
+.dia-prog{margin-bottom:14px}
+.dia-prog h4{font-family:'Fraunces',serif;font-size:17px;color:var(--terra);margin:6px 0 4px}
+.atividade{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.atividade .hora{width:96px;flex:none;font-weight:700;color:var(--terra)}
+.atividade-tx{flex:1;min-width:0}
+.atividade-ferr{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.atividade-ferr .cell{flex:1;min-width:160px}
+.linha-add.prog{grid-template-columns:110px 120px 1fr auto}
+.ferramentas{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ferramenta{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--line);border-radius:12px}
+.ferramenta b{display:block;margin-bottom:2px}
+.campo-naming input{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:650}
+.pilares{display:flex;flex-direction:column;gap:8px}
+.pilar{display:grid;grid-template-columns:auto 1fr 1.4fr auto;gap:8px;align-items:start;padding:10px;border:1px solid var(--line);border-radius:12px}
+.pilar-num{font-family:'Fraunces',serif;color:var(--terra);font-size:20px;padding-top:4px}
+.pilar textarea.cell{resize:vertical}
+@media (max-width:760px){
+  .linha-add.prog{grid-template-columns:1fr 1fr}
+  .linha-add.prog .input:nth-child(3),.linha-add.prog .btn{grid-column:span 2}
+  .ferramentas{grid-template-columns:1fr}
+  .pilar{grid-template-columns:auto 1fr auto}
+  .pilar textarea{grid-column:2 / span 1}
+}
+.chamada-cb{display:flex;gap:14px;align-items:center;flex-wrap:wrap;border:1px solid var(--terra-soft);background:linear-gradient(120deg,#fff 60%,#FBEFF0)}
+.chamada-cb h3{margin-bottom:2px}
+.resumo-atividade{font-size:13px;line-height:1.5;color:var(--ink-2);background:var(--green-soft);border-radius:8px;padding:6px 10px;margin-top:6px}
